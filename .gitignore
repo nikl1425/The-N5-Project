@@ -11,6 +11,9 @@ wp_dev_local/wordpress/*.txt
 wp_dev_local/wordpress/*.htaccess
 wp_dev_local/wordpress/wp-content/*.php
 wp_dev_local/wordpress/wp-content/plugins/akismet
-*code-workspace
+code-workspace
 wp_dev_local/wordpress/wp-content/plugins/*.php
 wp_dev_local/wordpress/wp-content/themes/*.php
+wp_dev_local/wordpress/wordpress.code-workspace
+wp_dev_local/wordpress/wp-content/themes/n5_demo/node_modules
+wp_dev_local/wordpress/wp-content/themes/n5_demo/package-lock.json

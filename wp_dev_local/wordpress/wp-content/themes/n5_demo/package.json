@@ -1,0 +1,17 @@
+{
+  "name": "n5-theme",
+  "version": "1.0.0",
+  "description": "Theme n5 demo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tailwind-build": "npx tailwindcss -i ./input.css -o ./style.css",
+    "tailwind-watch": "npx tailwindcss -i ./input.css -o ./style.css --watch"
+  },
+  "author": "NHR",
+  "license": "ISC",
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.9",
+    "tailwind": "^4.0.0"
+  }
+}
