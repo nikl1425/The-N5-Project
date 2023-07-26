@@ -1,0 +1,16 @@
+wp_dev_local/wordpress/wp-admin
+wp_dev_local/wordpress/wp-includes
+wp_dev_local/wordpress/wp-content/themes/twentytwentyone
+wp_dev_local/wordpress/wp-content/themes/twentytwentytwo
+wp_dev_local/wordpress/wp-content/themes/twentytwentythree/*
+wp_dev_local/wordpress/wp-content/upgrade/*
+wp_dev_local/wordpress/wp-content/languages/*
+wp_dev_local/wordpress/*.php
+wp_dev_local/wordpress/*.html
+wp_dev_local/wordpress/*.txt
+wp_dev_local/wordpress/*.htaccess
+wp_dev_local/wordpress/wp-content/*.php
+wp_dev_local/wordpress/wp-content/plugins/akismet
+*code-workspace
+wp_dev_local/wordpress/wp-content/plugins/*.php
+wp_dev_local/wordpress/wp-content/themes/*.php
