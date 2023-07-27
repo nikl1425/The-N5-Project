@@ -6,6 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php wp_head(); ?>
+    <?php 
+        if ( current_user_can( 'manage_options' ) ) {
+            show_admin_bar( true );
+        } else 
+        {
+            show_admin_bar( false );
+        }
+    ?>
+
 </head>
 
 <body class=" h-screen flex flex-col">

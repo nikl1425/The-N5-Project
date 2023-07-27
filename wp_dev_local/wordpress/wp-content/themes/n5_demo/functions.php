@@ -6,7 +6,7 @@ function SetupTheme()
    wp_enqueue_style('style', get_stylesheet_uri());
    wp_enqueue_style('custom', get_template_directory_uri() . "/custom.css");
 
-   remove_action('wp_head', '_admin_bar_bump_cb');
+   #remove_action('wp_head', '_admin_bar_bump_cb');
 }
 
 add_action('wp_enqueue_scripts', 'SetupTheme');
