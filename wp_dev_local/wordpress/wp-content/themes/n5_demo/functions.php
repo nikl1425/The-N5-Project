@@ -3,12 +3,38 @@
 # Setup theme:
 function SetupTheme()
 {
-   wp_enqueue_style( 'style', get_stylesheet_uri() );
+   wp_enqueue_style('style', get_stylesheet_uri());
+   wp_enqueue_style('custom', get_template_directory_uri() . "/custom.css");
 
-   remove_action('wp_head', '_admin_bar_bump_cb'); 
+   remove_action('wp_head', '_admin_bar_bump_cb');
 }
 
-add_action( 'wp_enqueue_scripts', 'SetupTheme' );
+add_action('wp_enqueue_scripts', 'SetupTheme');
+
+
+# Configuration
+function n5_custom_logo_setup()
+{
+   $defaults = array(
+      'flex-height' => true,
+      'flex-width' => true,
+      'header-text' => array('site-title', 'site-description'),
+      'unlink-homepage-logo' => true,
+   );
+   add_theme_support('custom-logo', $defaults);
+}
+add_action('after_setup_theme', 'n5_custom_logo_setup');
+
+
+function n5_register_my_menus()
+{
+   register_nav_menus(
+      array(
+         'header-menu' => __('Header Menu'),
+      )
+   );
+}
+add_action('init', 'n5_register_my_menus');
 
 # Block Registration
 
