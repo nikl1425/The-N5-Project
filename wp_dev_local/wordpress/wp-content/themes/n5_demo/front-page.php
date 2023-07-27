@@ -3,7 +3,12 @@
 get_header(); ?>
 
 
-<h1 class="text-6xl">hej</h1>
+<div>
+    <h1 class="text-6xl">hej</h1>
+</div>
+
+
+
 
 
 
