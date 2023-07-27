@@ -1,3 +1,8 @@
+<?php 
+   # Import Files
+   $footerConfig = require_once get_template_directory() . '/customizer/footer.php';
+?>
+
 <?php
 
 # Setup theme:
@@ -25,6 +30,13 @@ function n5_custom_logo_setup()
 }
 add_action('after_setup_theme', 'n5_custom_logo_setup');
 
+function n5_customizer_register($wp_customize)
+{
+   global $footerConfig;
+   $setupFooterFunc = $footerConfig['setup_footer'];
+   $setupFooterFunc($wp_customize);
+}
+add_action( 'customize_register', 'n5_customizer_register' );
 
 function n5_register_my_menus()
 {

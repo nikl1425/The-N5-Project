@@ -17,7 +17,7 @@
 
 </head>
 
-<body class=" h-screen flex flex-col">
+<body class=" h-screen flex flex-col overflow-hidden">
     <header class="py-5 border-b-2 border-slate-300">
         <nav class=" max-w-screen-xl mx-auto flex flex-row justify-between">
             <div class="shrink-0">
