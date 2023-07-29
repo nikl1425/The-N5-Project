@@ -18,32 +18,41 @@ $icon_config = array(
 
 
 
-<footer class="max-w-screen-xl mx-auto flex flex-row justify-between py-5 w-full">
+<footer class=" border border-t-2">
+    <div class="max-w-screen-xl mx-auto flex flex-row justify-between py-3 w-full">
+        <!-- Left -->
+        <div>
+        
+        </div>
 
-    <!-- Left -->
-    <div>
-        footer
+        <!-- Center -->
+        <div class=" flex flex-row">
+
+            <?php
+            $count = 0;
+
+            foreach ($icon_config as $i => $p) {
+                
+                $uri = $social_cnf->get_uri_social($count);
+
+                echo '<a class="mx-2" href="' . $uri . '">';
+                echo '<div >';
+                echo '<img src=" ' . esc_url($p) . '" />';
+                echo "</div>";
+                echo '</a>';
+
+                $count++;
+            }
+            ?>
+
+        </div>
+
+
+        <!-- Right -->
+        <div></div>
     </div>
 
-    <!-- Center -->
-    <div class="">
-        <?php
 
-
-        foreach ($icon_config as $i => $p) {
-            echo $p;
-            echo esc_url($p);
-            
-            echo '<img src="' . esc_url($p) . '" />';
-        }
-
-        ?>
-
-    </div>
-
-
-    <!-- Right -->
-    <div></div>
 </footer>
 <?php wp_footer(); ?>
 </body>
