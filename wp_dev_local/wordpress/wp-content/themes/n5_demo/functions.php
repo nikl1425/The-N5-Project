@@ -48,8 +48,6 @@ function n5_register_my_menus()
 add_action('init', 'n5_register_my_menus');
 
 # Block Registration
-
-
 class BaseBlock
 {
    private $name;
@@ -73,8 +71,4 @@ class BaseBlock
    }
 }
 
-// function custom_redirect_on_login($redirect_to, $request, $user){
-//    return home_url('/');
-// };
-
-// add_filter('login_redirect', 'custom_redirect_on_login', 10, 3);
+add_filter( 'learn-press/override-templates', function(){ return true; } );

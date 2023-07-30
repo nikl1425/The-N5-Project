@@ -3,7 +3,7 @@
 get_header(); ?>
 
 <main class="grow">
-    <section class="bg-gradient-to-r from-emerald-600 to-emerald-200 pb-28">
+    <section class="bg-gradient-to-r from-emerald-600 to-emerald-200 pb-36 pt-12">
         <div class="p-5">
             <section class="">
                 <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16">
