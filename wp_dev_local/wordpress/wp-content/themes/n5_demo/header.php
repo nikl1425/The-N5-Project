@@ -24,41 +24,44 @@ if (current_user_can('manage_options')) {
 }
 
 ?>>
-    <header class="py-3 border-b-2 border-slate-300">
-        <nav class=" max-w-screen-xl mx-auto flex flex-row justify-between">
-            <div class="shrink-0">
-                <a href="<?php echo get_home_url() ?>">
-                    <?php
-                    $custom_logo_id = get_theme_mod('custom_logo');
-                    $logo = wp_get_attachment_image_src($custom_logo_id, 'full');
-                    if (has_custom_logo()) {
-                        echo '<img class="object-cover w-12 " src="' . esc_url($logo[0]) . '" alt="' . get_bloginfo('name') . '">';
-                    } else {
-                        echo '<h1>' . get_bloginfo('name') . '</h1>';
-                    }
-                    ?>
-                </a>
-
-            </div>
-            <div class="grow">
-                <div class="flex justify-end h-full items-center">
-                    <div>
+    <header class="">
+        <section class="py-3 border-b-2 border-slate-300">
+            <nav class=" max-w-screen-xl mx-auto flex flex-row justify-between ">
+                <div class="shrink-0">
+                    <a href="<?php echo get_home_url() ?>">
                         <?php
-                        wp_nav_menu(
-                            array(
-                                'theme_location' => 'header-menu',
-                                'container_class' => 'n5-navigation'
-                            )
-                        );
+                        $custom_logo_id = get_theme_mod('custom_logo');
+                        $logo = wp_get_attachment_image_src($custom_logo_id, 'full');
+                        if (has_custom_logo()) {
+                            echo '<img class="object-cover w-12 " src="' . esc_url($logo[0]) . '" alt="' . get_bloginfo('name') . '">';
+                        } else {
+                            echo '<h1>' . get_bloginfo('name') . '</h1>';
+                        }
                         ?>
-                    </div>
-                    
-                    <a href="/login/" class=" bg-emerald-500 text-white rounded py-1 px-3 text-base font-medium hover:bg-emerald-800 ml-5">
-                        Login
                     </a>
+
                 </div>
-            </div>
-        </nav>
+                <div class="grow">
+                    <div class="flex justify-end h-full items-center">
+                        <div>
+                            <?php
+                            wp_nav_menu(
+                                array(
+                                    'theme_location' => 'header-menu',
+                                    'container_class' => 'n5-navigation'
+                                )
+                            );
+                            ?>
+                        </div>
+
+                        <a href="/login/"
+                            class=" bg-emerald-500 text-white rounded py-1 px-3 text-base font-medium hover:bg-emerald-800 ml-5">
+                            Login
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </section>
     </header>
 
-    <main class="flex-grow max-w-screen-xl mx-auto px-4 sm:px-6 md:px-8 w-full">
+  

@@ -1,4 +1,4 @@
-</main>
+
 
 <?php
 $social_cnf = new FooterConfig();
