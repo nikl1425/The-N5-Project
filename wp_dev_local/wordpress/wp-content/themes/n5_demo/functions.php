@@ -62,7 +62,7 @@ class BaseBlock
    {
       wp_register_script($this->name, get_stylesheet_directory_uri() . "/");
    }
-
+   
    function callback()
    {
       ob_start();

@@ -18,3 +18,4 @@ wp_dev_local/wordpress/wordpress.code-workspace
 wp_dev_local/wordpress/wp-content/themes/n5_demo/node_modules
 wp_dev_local/wordpress/wp-content/themes/n5_demo/package-lock.json
 wp_dev_local/wordpress/wp-content/plugins/learnpress/*
+wp_dev_local/wordpress/wp-content/plugins/n5Tail_demo/gutenpride/*
