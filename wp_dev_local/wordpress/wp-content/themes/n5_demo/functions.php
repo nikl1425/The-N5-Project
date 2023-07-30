@@ -2,7 +2,6 @@
    # Import Files
    $footerConfig = require_once get_template_directory() . '/customizer/footer.php';
 ?>
-
 <?php
 
 # Setup theme:
@@ -73,3 +72,9 @@ class BaseBlock
       return ob_get_clean();
    }
 }
+
+// function custom_redirect_on_login($redirect_to, $request, $user){
+//    return home_url('/');
+// };
+
+// add_filter('login_redirect', 'custom_redirect_on_login', 10, 3);
